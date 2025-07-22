@@ -13,7 +13,7 @@ def divide(x, y):
     return x / y
 
 def calculator():
-    print("=== Simple Calculator ===")
+    print("=== Simple Calculator ====")
     print("1. Add\n2. Subtract\n3. Multiply\n4. Divide")
     choice = input("Enter choice (1/2/3/4): ")
 

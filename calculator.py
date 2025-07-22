@@ -25,7 +25,7 @@ def calculator():
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
     except ValueError:
-        print("Invalid input")
+        print("Invalid inpssut")
         return
 
     ops = {'1': add, '2': subtract, '3': multiply

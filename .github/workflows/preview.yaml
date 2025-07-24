@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Don't set path manually
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -27,5 +27,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # change to ./build if using React
+          publish_dir: ./dist  # Change if your build folder is different
           destination_dir: preview/pr-${{ github.event.pull_request.number }}
